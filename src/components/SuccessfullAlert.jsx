@@ -17,8 +17,8 @@ class SuccessfullAlert extends Component {
             <React.Fragment>
                 {this.state.isActive ?
                     <React.Fragment>
-                        <div className='fixed inset-0 z-1000 bg-[#D9D9D9] opacity-60'></div>
-                        <div className='fixed inset-0 z-1001 flex justify-center items-center'>
+                        <div className='fixed inset-0 z-40 bg-[#D9D9D9] opacity-60'></div>
+                        <div className='fixed inset-0 z-50 flex justify-center items-center'>
                             <div className=' w-[384px] h-[301px] rounded-[9px] bg-[#FAFAFA] flex flex-col items-center'>
                                 <div className='w-full flex justify-center items-center bg-[#10CCAE] rounded-[9px] p-2'>
                                     <svg width="116" height="93" viewBox="0 0 116 93" fill="none" xmlns="http://www.w3.org/2000/svg">
