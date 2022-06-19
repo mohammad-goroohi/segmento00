@@ -86,10 +86,10 @@ class SignInLayout extends Component {
                     </div>
                     <div className='flex grow'>
 
-                    <Page345 />
+                    {/* <Page345 /> */}
                     <SuccessfullAlert isActive={true} />
                     {/* <Page7 /> */}
-                    {/* <Page8 /> */}
+                    <Page8 />
                     {/* <Page9 /> */}
 
 
