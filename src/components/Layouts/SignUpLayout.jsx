@@ -4,6 +4,11 @@ import Button1 from '../Buttons/Button1'
 import SuccessfullAlert from '../SuccessfullAlert';
 import Page1 from '../Page1';
 import Page2 from '../Page2';
+import {
+    BrowserRouter as Router,
+    Route,
+    Routes
+} from "react-router-dom";
 class SignUpLayout extends Component {
     render() {
         return (<div id='LoginApp' className='rtl w-screen h-screen flex flex-col bg-[#F5F7F7]'>
@@ -87,8 +92,11 @@ class SignUpLayout extends Component {
 
 
 
-                    {/* <Page1 /> */}
-                    {/* <Page2 /> */}
+                        <Routes>
+                            <Route path='/p1' element={<Page1 />} />
+                            <Route path='/p2' element={<Page2 />} />
+                        </Routes>
+
 
 
 

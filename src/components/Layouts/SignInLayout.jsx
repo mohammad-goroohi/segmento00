@@ -6,6 +6,11 @@ import Page8 from '../Page8';
 import Page7 from '../Page7';
 import SuccessfullAlert from '../SuccessfullAlert';
 import Page345 from '../Page345';
+import {
+    BrowserRouter as Router,
+    Route,
+    Routes
+} from "react-router-dom";
 class SignInLayout extends Component {
     render() {
         return (<div id='LoginApp' className='rtl w-screen h-screen flex flex-col bg-[#F5F7F7]'>
@@ -86,12 +91,19 @@ class SignInLayout extends Component {
                     </div>
                     <div className='flex grow'>
 
-                    {/* <Page345 /> */}
-                    <SuccessfullAlert isActive={true} />
-                    {/* <Page7 /> */}
-                    <Page8 />
-                    {/* <Page9 /> */}
 
+                        <Routes>
+                            <Route path='/p3' element={<Page345 />} />
+                            <Route path='/p4' element={
+                                <React.Fragment>
+                                    <SuccessfullAlert isActive={true} />
+                                    <Page345 />
+                                </React.Fragment>
+                            } />
+                            <Route path='/p5' element={<Page7 />} />
+                            <Route path='/p6' element={<Page8 />} />
+                            <Route path='/p7' element={<Page9 />} />
+                        </Routes>
 
 
                     </div>
